@@ -23,9 +23,6 @@ Ensure you have Node.js (version 18 or higher) and Docker installed before proce
 ```bash
 # watch mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
 ## Test
