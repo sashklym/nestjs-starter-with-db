@@ -18,15 +18,9 @@ Ensure you have Node.js (version 18 or higher) and Docker installed before proce
 1. Copy the sample.env file and rename it to .env. Make any necessary changes to the environment variable values in the .env file.
     `cp sample.env .env`
 
-2. Run the provided bash script to start the containers. Ensure that the script is executable by running the following command (`chmod +x start-containers.sh`):
-    `./start-containers.sh`
-
-## Running the app
+2. Run the application in development mode, which will also start the necessary services in the Docker:
 
 ```bash
-# development
-$ npm run start
-
 # watch mode
 $ npm run start:dev
 
