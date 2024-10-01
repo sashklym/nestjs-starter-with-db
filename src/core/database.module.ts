@@ -1,6 +1,7 @@
 import { Logger, Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { User } from 'src/modules/users/user.entity';
 
 const logger = new Logger('DatabaseModule');
 
@@ -29,7 +30,7 @@ const logger = new Logger('DatabaseModule');
             database: configService.get('DB_DATABASE'),
             synchronize: false,
             schema: configService.get('DB_SCHEMA'),
-            entities: [],
+            entities: [User],
             uuidExtension: 'uuid-ossp',
           };
         } catch (error) {
